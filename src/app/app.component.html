@@ -1,0 +1,18 @@
+<h1>
+  {{title}}
+</h1>
+<div class="row top-buffer">
+    <label class="col-md-3" for="">Lala</label>
+    <div class="col-md-9">
+        <select class="form-control" name="" [(ngModel)]="model">
+                <option *ngFor="let item of items" [ngValue]="item.V">{{item.D}}</option>
+        </select>
+    </div>
+</div>
+<div>
+  {{model}}
+</div>
+<div>
+  <button (click)="load1()">Load list 1</button>
+  <button (click)="load2()">Load list 2</button>
+</div>
